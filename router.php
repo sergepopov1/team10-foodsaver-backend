@@ -7,4 +7,6 @@ if (php_sapi_name() == 'cli-server') {
     }
 }
 
-include __DIR__ . '/index.php';
+http_response_code(404);
+echo "File not found!";
+
